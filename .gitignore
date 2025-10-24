@@ -1,7 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Yeoman template
 *.log
-.circleci/
 .out/
 ### Windows template
 # Windows image file caches
