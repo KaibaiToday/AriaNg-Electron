@@ -226,7 +226,7 @@ gulp.task('package',gulp.series(()=>gulp.src('dist').pipe(exec.reporter({
       err: true
     })).pipe(exec('npm run make'))))
 
-gulp.task('prepare-extraRes',()=>gulp.src('aria2/*').pipe(gulp.dest('out/ariang-win32-x64/aria2')));
+gulp.task('prepare-extraRes',()=>gulp.src('aria2/*').pipe(gulp.dest('out/ariang-electron-win32-x64/aria2')));
 
 exports.default = gulp.series('serve');
 exports.test = gulp.series('dev');

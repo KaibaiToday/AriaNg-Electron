@@ -6,6 +6,19 @@ module.exports = {
     dir:'dist',
     asar:true,
     main: 'main.js',
+    ignore:[
+      '.tmp',
+      '.circleci',
+      '.aria2',
+      '.i18n',
+      'node_modules',
+      'out',
+      'scripts',
+      'src',
+      '.editorconfig',
+      'gulpfile.js',
+      './*.md'
+    ]
   },
   rebuildConfig: {},
   makers: [

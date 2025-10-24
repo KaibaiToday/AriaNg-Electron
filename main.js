@@ -1,7 +1,6 @@
 const { app, BrowserWindow } = require('electron/main');
 const { spawn } = require('node:child_process');
 const path = require('node:path')
-const electronReload=require('electron-reload')('dist');
 const aria2c=require('child_process')
 const currentDir = process.cwd();
 
@@ -24,7 +23,6 @@ function createWindow () {
   win.excludedFromShownWindowsMenu=true
   win.menuBarVisible=false
   win.loadFile('./dist/window.html')
-  win.webContents.openDevTools()
 }
 
 function runAria2()
